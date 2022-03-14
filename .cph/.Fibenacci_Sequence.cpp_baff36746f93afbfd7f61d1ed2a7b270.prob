@@ -1,0 +1,1 @@
+{"name":"Local: Fibenacci_Sequence","url":"d:\\IP software\\C++\\Fibenacci_Sequence.cpp","tests":[{"id":1605895277844,"input":"153","output":""},{"id":1605895291961,"input":"6","output":""},{"id":1605895294407,"input":"7","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\IP software\\C++\\Fibenacci_Sequence.cpp","group":"local","local":true}

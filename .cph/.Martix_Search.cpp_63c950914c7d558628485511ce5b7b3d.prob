@@ -1,0 +1,1 @@
+{"name":"Local: Martix_Search","url":"e:\\IP_software\\C++\\Martix_Search.cpp","tests":[{"id":1621886328478,"input":"3 3\n5\n1 2 3\n4 5 6\n7 8 9","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\IP_software\\C++\\Martix_Search.cpp","group":"local","local":true}

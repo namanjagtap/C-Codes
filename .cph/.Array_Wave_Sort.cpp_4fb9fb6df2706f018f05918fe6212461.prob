@@ -1,0 +1,1 @@
+{"name":"Local: Array_Wave_Sort","url":"e:\\IP_software\\C++\\Array_Wave_Sort.cpp","tests":[{"id":1621956476311,"input":"7\n1 3 4 7 5 6 2","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\IP_software\\C++\\Array_Wave_Sort.cpp","group":"local","local":true}
