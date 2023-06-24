@@ -167,6 +167,22 @@ int main(){
     //     }
     //     cout<<endl;
     // }
+    //
+    // More Efficient Method
+    //
+    // int n;
+    // cin>>n;
+    // for(int i=1;i<=n;i++){
+    //     for(int j=n;j>0;j--){
+    //         if(i<j)
+    //             cout<<"  ";
+    //         else
+    //             cout<<j<<" ";
+    //     }
+    //     for(int k=2;k<=i;k++)
+    //         cout<<k<<" ";
+    //     cout<<endl;
+    // }
     // ----------------------------------------------------------
     // Rhombus Pattern
     // ----------------------------------------------------------

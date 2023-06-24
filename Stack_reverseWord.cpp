@@ -3,11 +3,13 @@
 using namespace std;
 
 void reverseSentence(string s){
-    stack<string> st;
+    // stack<string> st;
+    stack<char> st;
     for(int i=0;i<s.length();i++){
-        string word="";
-        word += s[i];
-        st.push(word);
+        // string word="";
+        // word += s[i];
+        // st.push(word);
+        st.push(s[i]);
     }
 
     while(!st.empty()){

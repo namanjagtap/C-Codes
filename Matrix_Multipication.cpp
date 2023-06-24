@@ -52,7 +52,7 @@ int main(){
             {
                 multi[i][j] += a[i][k]*b[k][j];
             }
-    
+
     cout<<endl<<"Output Matrix: "<<endl;
     int sum=0;
     for(i=0;i<r1;i++)

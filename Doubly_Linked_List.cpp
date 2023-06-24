@@ -46,12 +46,12 @@ void display(node* head){
         temp=temp->next;
     }
     cout<<temp->data<<"->NULL"<<endl;
-    cout<<"Back traversal"<<endl;
-    while(temp!=head){
-        cout<<temp->data<<"->";
-        temp=temp->previous;
-    }
-    cout<<temp->data<<"->NULL"<<endl;
+    // cout<<"Back traversal"<<endl;
+    // while(temp!=head){
+    //     cout<<temp->data<<"->";
+    //     temp=temp->previous;
+    // }
+    // cout<<temp->data<<"->NULL"<<endl;
 }
 
 void deleteAtHead(node* &head){
@@ -114,7 +114,13 @@ node* kappend(node* &head, int k){
         }
         node* newTail = temp;
         node* newHead = temp->next;
-        temp->next->next=head;
+
+        // temp->next->next=head;
+        // head->previous = temp->next;
+        //          Or
+        newHead->next = head;
+        head->previous = newHead;
+
         newTail->next=NULL;
         return newHead;
     }
@@ -227,13 +233,13 @@ int main(){
     insertAtTail(head2, 5);
     insertAtTail(head2, 10);
     // insertAtHead(head, 0);
-    // intersect(head1, head2, 3);
+    intersect(head1, head2, 3);
     display(head1);
-    // display(head2);
-    // cout<<intersection(head1, head2)<<endl;
+    display(head2);
+    cout<<intersection(head1, head2)<<endl;
     // deleteNode(head, 1);
-    node* newhead=kappend(head1, 2);
-    display(newhead);
+    // node* newhead=kappend(head1, 2);
+    // display(newhead);
     // node* newhead= merge(head1,head2);
     // display(newhead);
     return 0;

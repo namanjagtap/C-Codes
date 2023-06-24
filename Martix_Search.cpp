@@ -30,7 +30,7 @@ int main(){
     }
     else
         cout<<"Element not found."<<endl;
-    
+
     return 0;
-    
+
 }

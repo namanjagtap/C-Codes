@@ -1,6 +1,12 @@
 #include <iostream>
 using namespace std;
 
+//Use of * and &
+// When we use * we send a copy of original variable value to the function and
+// whenever after we access that value it again point to same position.
+//When we use & we pass the original value of that variable. Value will not undergo any change made in function.
+// Whatever changes in the value inside function will be same implemented on original value. This is called pass-by-refrence.
+
 class node{
     public:
     int data;
@@ -79,9 +85,9 @@ int search(node* &head, int val){
 
 void display(node* head){
 	node* temp = head;
-	while(temp!=NULL){
-		cout<<temp->data<<"->";
-		temp=temp->next;
+	while(head!=NULL){
+		cout<<head->data<<"->";
+		head=head->next;
 	}
 	cout<<"NULL"<<endl;
 }
@@ -99,6 +105,15 @@ node* reverse(node* head){
 		currPtr=nextPtr;
 	}
 	return prevPtr;
+}
+
+node* reverseRecursive(node* &head){
+    if(head == NULL || head->next == NULL)
+        return head;
+    node* newHead = reverseRecursive(head->next);
+    head->next->next = head;
+    head->next = NULL;
+    return newHead;
 }
 
 node* reverseK(node* head, int k){
@@ -255,11 +270,13 @@ int main(){
     // cout<<search(head, 7)<<endl;
     // deleteAtHead(head);
     // int k=3;
-    // node* newHead=reverse(head);
-    // display(newHead);
-    node* newhead = mergeRecursive(head1, head2);
-    display(newhead);
-    evenafterodd(newhead);
-    display(newhead);
+    display(head1);
+    node* newHead=reverse(head1);
+    display(newHead);
+
+    // node* newhead = mergeRecursive(head1, head2);
+    // display(newhead);
+    // evenafterodd(newhead);
+    // display(newhead);
     return 0;
 }
